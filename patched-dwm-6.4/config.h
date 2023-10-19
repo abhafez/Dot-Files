@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 #include <X11/XF86keysym.h>
 /* appearance */
-static const unsigned int borderpx  	    =   1;							/* border pixel of windows */
+static const unsigned int borderpx  	    =   3;							/* border pixel of windows */
 static const unsigned int gappx     	    =   10;							/* border pixel of windows */
 static const unsigned int snap      	    =   32;
 static const unsigned int systraypinning    =   0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -77,7 +77,7 @@ static Sp scratchpads[] = {
 };
 
 /* tagging */
-static const char *tags[] = {"\uf268", "\uf120", "\uf07b", "\uf113", "\uf198", "\uf03d",    "\uf19d",  "\uf121", "\uf269"};
+static const char *tags[] = {"\uf269", "\uf121", "\uf268", "\uf120", "\uf07b", "\uf113", "\uf03d",    "\uf19d",   "\uf198"};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -85,9 +85,8 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance      title           tags mask           isfloating       monitor */
-	{ "Gimp",     NULL,         NULL,           0,                  1,               -1 },
 	{ "copyq",    NULL,         NULL,           0,                  1,               -1 },
-	{ "Firefox",  NULL,         NULL,           1 << 8,             0,               -1 },
+	{ "Slack",    NULL,         NULL,           1 << 8,             0,               -1 },
 	{ NULL,		  "spterm",	    NULL,		    SPTAG(0),		    1,			     -1 },
 	{ NULL,		  "spfm",	    NULL,		    SPTAG(1),		    1,			     -1 },
 	{ NULL,		  "keepassxc",  NULL,		    SPTAG(2),		    0,			     -1 },
@@ -135,6 +134,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
+	{ MODKEY,              			XK_F2,     view_adjacent,  { .i = +1 } },
+	{ MODKEY,              			XK_F1,     view_adjacent,  { .i = -1 } },
 	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY|ShiftMask,             XK_m,      setlayout,      {.v = &layouts[2]} },
