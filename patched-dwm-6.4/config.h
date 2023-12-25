@@ -29,11 +29,11 @@ static const char col_cyan[]        =   "#282737";
 static const char col_black[]       =   "#1E1D2D";
 static const char col_blue[]        =   "#96CDFB"; // focused window border
 static const char col_green[]       =   "#ABE9B3";
-static const char col_red[] 		=   "#F28FAD";
+static const char col_red[] 		    =   "#F28FAD";
 static const char col_orange[]      =   "#F8BD96";
-static const char col_yellow[] 		=   "#FAE3B0";
-static const char col_pink[] 		=   "#94E2D5"; // $d5aeea
-static const char col_blu[] 		=   "#008080";
+static const char col_yellow[] 		  =   "#FAE3B0";
+static const char col_pink[] 		    =   "#94E2D5"; // $d5aeea
+static const char col_blu[] 		    =   "#008080";
 static const char col_borderbar[] 	=   "#1E1D2D"; // inner border
 
 
@@ -43,7 +43,7 @@ enum {
 	SchemeCol2,
 	SchemeCol3,
 	SchemeCol4,
-    SchemeCol5,
+  SchemeCol5,
 	SchemeCol6,
 	SchemeSel
 };
@@ -77,19 +77,20 @@ static Sp scratchpads[] = {
 };
 
 /* tagging */
-static const char *tags[] = {"\uf269", "\uf121", "\uf268", "\uf120", "\uf07b", "\uf113", "\uf03d",    "\uf19d",   "\uf198"};
+static const char *tags[] = {"", "󰯊", "󰅨", "󰮤", "", "󰌶", "󰮤", "󱍑", "󰒱"};
+ // "\uf19d", 
 
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance      title           tags mask           isfloating       monitor */
-	{ "copyq",    NULL,         NULL,           0,                  1,               -1 },
-	{ "Slack",    NULL,         NULL,           1 << 8,             0,               -1 },
-	{ NULL,		  "spterm",	    NULL,		    SPTAG(0),		    1,			     -1 },
-	{ NULL,		  "spfm",	    NULL,		    SPTAG(1),		    1,			     -1 },
-	{ NULL,		  "keepassxc",  NULL,		    SPTAG(2),		    0,			     -1 },
+	/* class      instance      title           tags mask               isfloating       monitor */
+	{ "copyq",    NULL,         NULL,           0,                      1,               -1 },
+	{ "Slack",    NULL,         NULL,           1 << 8,                 0,               -1 },
+	{ NULL,		  "spterm",	      NULL,		        SPTAG(0),		            1,			         -1 },
+	{ NULL,		  "spfm",	        NULL,		        SPTAG(1),		            1,			         -1 },
+	{ NULL,		  "keepassxc",    NULL,		        SPTAG(2),		            0,			         -1 },
 };
 
 /* layout(s) */
@@ -134,17 +135,17 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
-	{ MODKEY,              			XK_F2,     view_adjacent,  { .i = +1 } },
-	{ MODKEY,              			XK_F1,     view_adjacent,  { .i = -1 } },
+	{ MODKEY,              			    XK_F2,     view_adjacent,  { .i = +1 } },
+	{ MODKEY,              			    XK_F1,     view_adjacent,  { .i = -1 } },
 	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY|ShiftMask,             XK_y,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,			            XK_f,      fullscreen,     {0} },
+	{ MODKEY,			                  XK_f,      fullscreen,     {0} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	// SCRATCH PAD
-	{ MODKEY,            			XK_y,  	   togglescratch,  {.ui = 0 } },
-	{ MODKEY,            			XK_u,	   togglescratch,  {.ui = 1 } },
-	{ MODKEY,            			XK_x,	   togglescratch,  {.ui = 2 } },
+	{ MODKEY,            			      XK_y,  	   togglescratch,  {.ui = 0 } },
+	{ MODKEY,            			      XK_u,	     togglescratch,  {.ui = 1 } },
+	{ MODKEY,            			      XK_x,	     togglescratch,  {.ui = 2 } },
 	{ MODKEY|ShiftMask,             XK_a,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	// FOCUS MONITOR
