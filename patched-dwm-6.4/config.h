@@ -29,11 +29,11 @@ static const char col_cyan[]        =   "#282737";
 static const char col_black[]       =   "#1E1D2D";
 static const char col_blue[]        =   "#96CDFB"; // focused window border
 static const char col_green[]       =   "#ABE9B3";
-static const char col_red[] 		    =   "#F28FAD";
+static const char col_red[] 		=   "#F28FAD";
 static const char col_orange[]      =   "#F8BD96";
-static const char col_yellow[] 		  =   "#FAE3B0";
-static const char col_pink[] 		    =   "#94E2D5"; // $d5aeea
-static const char col_blu[] 		    =   "#008080";
+static const char col_yellow[] 		=   "#FAE3B0";
+static const char col_pink[] 		=   "#94E2D5"; // $d5aeea
+static const char col_blu[] 		=   "#008080";
 static const char col_borderbar[] 	=   "#1E1D2D"; // inner border
 
 
@@ -43,7 +43,7 @@ enum {
 	SchemeCol2,
 	SchemeCol3,
 	SchemeCol4,
-  SchemeCol5,
+    SchemeCol5,
 	SchemeCol6,
 	SchemeSel
 };

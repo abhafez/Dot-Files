@@ -104,7 +104,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 0.8;
@@ -116,21 +116,20 @@ static const char *colorname[] = {
 	/* 8 normal colors */
 	"#45475A",
 	"#F38BA8",
-	"#A6E3A1",
+	"#94E2D5",
 	"#F9E2AF",
 	"#89B4FA",
 	"#F5C2E7",
-	"#94E2D5",
+	"#A6E3A1",
 	"#BAC2DE",
-
 	/* 8 bright colors */
 	"#585B70",
 	"#F38BA8",
-	"#A6E3A1",
+	"#94E2D5",
 	"#F9E2AF",
 	"#89B4FA",
 	"#F5C2E7",
-	"#94E2D5",
+	"#A6E3A1",
 	"#A6ADC8",
 
    [256] = "#CDD6F4", /* default foreground colour */
@@ -138,7 +137,7 @@ static const char *colorname[] = {
    [258] = "#1E1E2E", /*575268*/
   "#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#45475A", /* 258 -> bg */
+	"#11111B", /* 258 -> bg */
 	"#F5C2E7", /* 259 -> fg */
 
 
