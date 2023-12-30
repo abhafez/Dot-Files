@@ -1,0 +1,60 @@
+// Place your key bindings in this file to override the defaults
+[
+  // ZOOM
+  {
+    "key": "ctrl+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+numpad_subtract",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "editor.action.fontZoomIn"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "editor.action.fontZoomOut"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "editor.action.fontZoomReset"
+  },
+  {
+    "key": "alt+f alt+f",
+    "command": "eslint.executeAutofix"
+  },
+  {
+    "key": "alt+e alt+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "alt+e alt+e",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "alt+e alt+u",
+    "command": "editor.emmet.action.updateTag"
+  },
+  {
+    "key": "alt+f10",
+    "command": "editor.emmet.action.nextEditPoint"
+  },
+  {
+    "key": "alt+f9",
+    "command": "editor.emmet.action.prevEditPoint"
+  },
+  {
+    "key": "alt+f9",
+    "command": "-editor.action.nextCommentThreadAction"
+  },
+]

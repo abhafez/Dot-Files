@@ -1,0 +1,122 @@
+{
+  // window
+  "window.menuBarVisibility": "hidden",
+  "window.enableMenuBarMnemonics": false,
+  "window.titleBarStyle": "custom",
+  // workbench
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "a-file-icon-vscode",
+  // catppuccin
+  "catppuccin.accentColor": "teal",
+  // a file icon
+  "a-file-icon-vscode.activeIconPacks": ["react-redux", "php", "rails"],
+  "a-file-icon-vscode.arrowTheme": "triangle",
+  "a-file-icon-vscode.folderTheme": "specific",
+  "a-file-icon-vscode.folderColor": "#94e2d5",
+  "a-file-icon-vscode.opacity": 0.7,
+  // EDITOR
+  "editor.fontFamily": " 'JetBrainsMono Nerd Font', 'agave Nerd Font', 'Noto Emoji',  'Cocon Next Arabic','FontAwesome',  'Droid Sans Mono', 'monospace', monospace",
+  "editor.minimap.enabled": false,
+  "editor.hover.enabled": false,
+  //
+  "search.exclude": {
+    "build/": true,
+    "dist": true,
+    "node_modules": true,
+    "**/node_modules": true,
+    "package-lock.json": true,
+    "*.d.ts": true
+  },
+  // Highlight matching tag
+  "highlight-matching-tag.enabled": true,
+  "highlight-matching-tag.highlightFromAttributes": true,
+  "highlight-matching-tag.highlightFromContent": true,
+  "highlight-matching-tag.highlightFromName": true,
+  "highlight-matching-tag.highlightSelfClosing": true,
+  "highlight-matching-tag.noDefaultEmptyElements": true,
+  "highlight-matching-tag.showPath": true,
+  "highlight-matching-tag.showRuler": true,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "left": {
+        "custom": {
+          "borderWidth": "3px 0 3px 3px",
+          "borderStyle": "solid",
+          "borderColor": "#D28520",
+          "borderRadius": "1px"
+        }
+      },
+      "right": {
+        "custom": {
+          "borderWidth": "3px 3px 3px 0",
+          "borderStyle": "solid",
+          "borderColor": "#D28520",
+          "borderRadius": "1px"
+        }
+      }
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.productIconTheme": "fluent-icons",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.userWords": [
+    "beginkeyword",
+    "Catppuccin",
+    "Cocon",
+    "codetag",
+    "colours",
+    "cssentity",
+    "esbenp",
+    "HMTL",
+    "javadoc",
+    "Nord",
+    "Noto",
+    "rainbowend",
+    "readwrite",
+    "redish",
+    "selectionset",
+    "setext"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "*.erb": "html",
+    "ruby": "html"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 1,
+  "workbench.sideBar.location": "right",
+  "git-graph.graph.colours": [
+    "#96CDFB",
+    "#F28FAD",
+    "#94E2D5",
+    "#F8BD96",
+    "#D5AEEA",
+    "#96CDFB",
+    "#F28FAD",
+    "#F8BD96",
+    "#94E2D5",
+    "#FAE3B0"
+  ],
+  "leetcode.workspaceFolder": "/home/hafez/.leetcode",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  
+}

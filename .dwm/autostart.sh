@@ -1,9 +1,10 @@
 #!/bin/sh
 
 copyq &
-setxkbmap -layout gb,ara -variant ,digits -option grp:alt_space_toggle caps:escape &
+bash .kb.sh &
+# xmodmap -e "keycode 135 = Super_R" & 
 sxhkd &
-feh --no-fehbg --bg-fill ~/.bg.png &
+bash .fehbg;
 bash ~/.screenlayout/dual.sh;
 
 export $(dbus-launch --exit-with-session)

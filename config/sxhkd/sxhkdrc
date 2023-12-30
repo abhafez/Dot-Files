@@ -1,0 +1,59 @@
+super + alt + r
+  rofi -modi emoji -show emoji -emoji-format
+
+super + r
+  rofi -show drun
+
+super + shift + a
+  arandr
+
+super + shift+ p
+  pavucontrol
+
+ctrl + alt + shift + q
+  bash ~/.screenlayout/monitor.sh
+
+ctrl + alt + shift + s
+  bash ~/.screenlayout/laptop.sh
+
+super + shift + f
+  vivaldi; xdotool key super+1
+
+super + shift + a
+  arandr
+
+XF86AudioRaiseVolume
+  bash ~/.config/sxhkd/scripts/RaiseVolume.sh
+
+XF86AudioLowerVolume
+  bash ~/.config/sxhkd/scripts/LowerVolume.sh
+
+XF86AudioMute
+  bash ~/.config/sxhkd/scripts/muteAll.sh
+
+# Change screen brightness
+XF86MonBrightnessUp
+    light -A 5
+
+XF86MonBrightnessDown
+    light -U 5
+
+# Take a screenshot
+super + F8
+    flameshot full
+
+super + s
+    flameshot gui
+
+super + F12
+  bash ~/.kb.sh
+
+super + shift + n
+  thunar ~
+
+
+super + shift + s
+  slack; xdotool key super+9
+
+super + shift + l
+  slock
