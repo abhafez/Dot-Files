@@ -9,32 +9,32 @@ static const unsigned int systrayonleft     =   0;    /* 0: systray in the right
 static const unsigned int systrayspacing    =   2;   /* systray spacing */
 static const int systraypinningfailfirst    =   1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 					/* snap pixel */
-static const char panel[][20]       =   {"xfce4-panel", "Xfce4-panel"}; /* name & cls of panel win */
-static const int showbar            =   1;									/* 0 means no bar */
-static const int topbar             =   1;
-static const int showsystray        =   1;        /* 0 means no systray */				/* 0 means bottom bar */
-static const char *fonts[]          =   {"FantasqueSansMono:size=13", "Noto Color Emoji:size=14", "CoconNextArabic-Light:size=14"};
-static const char dmenufont[]       =   "CoconNextArabic-Light:size=14";
-static const char col1[]            =   "#ffffff";
-static const char col2[]            =   "#ffffff";
-static const char col3[]            =   "#ffffff";
-static const char col4[]            =   "#ffffff";
-static const char col5[]            =   "#ffffff";
-static const char col6[]            =   "#ffffff";
-static const char col_gray1[]       =   "#1E1D2D";
-static const char col_gray2[]       =   "#585767";
-static const char col_gray3[]       =   "#585767";
-static const char col_gray4[]       =   "#96CDFB";
-static const char col_cyan[]        =   "#282737";
-static const char col_black[]       =   "#1E1D2D";
-static const char col_blue[]        =   "#96CDFB"; // focused window border
-static const char col_green[]       =   "#ABE9B3";
-static const char col_red[] 		=   "#F28FAD";
-static const char col_orange[]      =   "#F8BD96";
-static const char col_yellow[] 		=   "#FAE3B0";
-static const char col_pink[] 		=   "#94E2D5"; // $d5aeea
-static const char col_blu[] 		=   "#008080";
-static const char col_borderbar[] 	=   "#1E1D2D"; // inner border
+static const char panel[][20]         =   {"xfce4-panel", "Xfce4-panel"}; /* name & cls of panel win */
+static const int showbar              =   1;									/* 0 means no bar */
+static const int topbar               =   1;
+static const int showsystray          =   1;        /* 0 means no systray */				/* 0 means bottom bar */
+static const char *fonts[]            =   {"FantasqueSansMono:size=13", "Noto Color Emoji:size=14", "CoconNextArabic-Light:size=14"};
+static const char dmenufont[]         =   "CoconNextArabic-Light:size=14";
+static const char col1[]              =   "#ffffff";
+static const char col2[]              =   "#ffffff";
+static const char col3[]              =   "#ffffff";
+static const char col4[]              =   "#ffffff";
+static const char col5[]              =   "#ffffff";
+static const char col6[]              =   "#ffffff";
+static const char col_gray1[]         =   "#1E1D2D";
+static const char col_gray2[]         =   "#585767";
+static const char col_gray3[]         =   "#585767";
+static const char col_gray4[]         =   "#96CDFB";
+static const char col_cyan[]          =   "#282737";
+static const char col_black[]         =   "#1E1D2D";
+static const char col_blue[]          =   "#96CDFB"; // focused window border
+static const char col_green[]         =   "#ABE9B3";
+static const char col_red[]           =   "#F28FAD";
+static const char col_orange[]        =   "#F8BD96";
+static const char col_yellow[]        =   "#FAE3B0";
+static const char col_teal[]          =   "#94E2D5";
+static const char col_blu[]           =   "#008080";
+static const char col_borderbar[]     =   "#1E1D2D"; // inner border
 
 
 enum {
@@ -43,7 +43,7 @@ enum {
 	SchemeCol2,
 	SchemeCol3,
 	SchemeCol4,
-    SchemeCol5,
+	SchemeCol5,
 	SchemeCol6,
 	SchemeSel
 };
@@ -57,7 +57,7 @@ static const char *colors[][3]      = {
 	[SchemeCol4]  = { col4,      	col_gray1,  col_gray2 },
 	[SchemeCol5]  = { col5,      	col_gray1,  col_gray2 },
 	[SchemeCol6]  = { col6,      	col_gray1,  col_gray2 },
-	[SchemeSel]   = { col_pink,  	col_black,  col_pink  },
+	[SchemeSel]   = { col_teal,       col_black,  col_teal },
 };
 
 
