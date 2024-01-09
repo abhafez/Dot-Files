@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetbrainsMono Nerd Font:pixelsize=18:antialias=true:autohint=true";
-static char *font2[] = { "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
+static char *font = "JetbrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true";
+static char *font2[] = { "NotoColorEmoji:pixelsize=9:antialias=true:autohint=true" };
 static int borderpx = 10;
 
 /*
@@ -263,7 +263,9 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_P,           clippaste,      {.i =  0} },
-     { MODKEY,               XK_c,           clipcopy,       {.i =  0} },
+	{ TERMMOD,              XK_P,           clippaste,      {.i =  0} },
+    { MODKEY,               XK_p,           clipcopy,       {.i =  0} },
+    { MODKEY,               XK_c,           clipcopy,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
