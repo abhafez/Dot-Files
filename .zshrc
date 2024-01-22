@@ -130,9 +130,6 @@ source ~/.oh-my-zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
-# Load Angular CLI autocompletion.
-alias gitb='git rev-parse --abbrev-ref HEAD | tr -d '\n' | xclip -selection clipboard'
-
 set -o vi
 
 # bun completions
@@ -160,3 +157,5 @@ zle -N edit-command-line
 bindkey '^X^E' edit-command-line
 
 [[ ! $DISPLAY && $(tty) = "/dev/tty1"  ]] && startx
+
+xdg-mime default your-file-manager.desktop inode/directory
