@@ -19,4 +19,4 @@ alias :q="exit"
 alias :Q="exit"
 alias vimrc="cd ~/.config/nvim; vim ."
 alias gdf="git diff | delta"
-alias co="git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | xargs git checkout"
+alias co='git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | xargs git checkout'

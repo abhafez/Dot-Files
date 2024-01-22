@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font =
-    "VictorMono NFP Medium:pixelsize=16:antialias=true:autohint=true";
+    "JetBrainsMono NF Medium:pixelsize=16:antialias=true:autohint=true";
 static char *font2[] = {
     "NotoColorEmoji:pixelsize=9:antialias=true:autohint=true"};
 static int borderpx = 10;
