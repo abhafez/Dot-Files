@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font =
-    "BlexMono Nerd Font Medium:pixelsize=16:antialias=true:autohint=true";
+    "VictorMono NFP Medium:pixelsize=16:antialias=true:autohint=true";
 static char *font2[] = {
     "NotoColorEmoji:pixelsize=9:antialias=true:autohint=true"};
 static int borderpx = 10;
@@ -123,11 +123,11 @@ static const char *colorname[] = {
     "#A6ADC8",
 
     [256] = "#CDD6F4", /* default foreground colour */
-    [257] = "#1E1E2E", /* default background colour */
-    [258] = "#1E1E2E", /*575268*/
+    [257] = "#1A1826", /* default background colour */
+    [258] = "#1A1826", /*575268*/
     "#add8e6",         /* 256 -> cursor */
     "#555555",         /* 257 -> rev cursor*/
-    "#11111B",         /* 258 -> bg */
+    "#1A1826",         /* 258 -> bg */
     "#F5C2E7",         /* 259 -> fg */
 
 };

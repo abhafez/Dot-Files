@@ -20,10 +20,10 @@ static const int showbar = 1;                    /* 0 means no bar */
 static const int topbar = 1;
 static const int showsystray = 1;
 /* 0 means no systray */ /* 0 means bottom bar */
-static const char *fonts[] = {"BlexMono Nerd Font Medium:size=14",
+static const char *fonts[] = {"VictorMono NFP Medium:size=14",
                               "Noto Color Emoji:size=14",
                               "CoconNextArabic-Light:size=14"};
-static const char dmenufont[] = "BlexMono Nerd Font Medium:size=14";
+static const char dmenufont[] = "VictorMono NFP Medium:size=14";
 static const char col1[] = "#ffffff";
 static const char col2[] = "#ffffff";
 static const char col3[] = "#ffffff";
