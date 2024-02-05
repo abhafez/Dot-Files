@@ -1,22 +1,37 @@
-alias vim="nvim"
-alias cl="clear"
+#############
+# VOID Linux
+#############
 alias i="doas xbps-install -S"
-alias t="tmux"
 alias u="i; doas xbps-install -u xbps; doas xbps-install -u"
 alias q="xbps-query -Rs"
 alias r="doas xbps-remove -R"
-alias gs="gss"
+#############
+# shortcuts
+#############
+alias vim="nvim"
+alias cl="clear"
+alias t="tmux"
 alias calc="node"
-alias ktmux="tmux kill-server"
 alias ls='lsd'
 alias lsa='lsd -la'
 alias ks='lsd'
 alias cat='bat --theme="Catppuccin-mocha"'
+alias lg='lazygit'
 alias code='code --enable-proposed-api GitHub.vscode-pull-request-github'
+#############
+# quick change
+#############
 alias sxkb='cd ~/.config/sxhkd/; nvim .;'
+alias vimrc="cd ~/.config/nvim; vim ."
 alias zshrc='vim ~/.zshrc'
+#############
+#### exit
+#############
 alias :q="exit"
 alias :Q="exit"
-alias vimrc="cd ~/.config/nvim; vim ."
+#############
+# git
+#############
+alias gs="gss"
 alias gdf="git diff | delta"
 alias co='git branch --sort=-committerdate | fzf --header "Checkout Recent Branch" --preview "git diff {1} --color=always" --pointer="" | xargs git checkout'
