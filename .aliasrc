@@ -11,8 +11,8 @@ alias ktmux="tmux kill-server"
 alias ls='lsd'
 alias lsa='lsd -la'
 alias ks='lsd'
-alias cat='bat'
-alias code='code-oss --enable-proposed-api GitHub.vscode-pull-request-github'
+alias cat='bat --theme="Catppuccin-mocha"'
+alias code='code --enable-proposed-api GitHub.vscode-pull-request-github'
 alias sxkb='cd ~/.config/sxhkd/; nvim .;'
 alias zshrc='vim ~/.zshrc'
 alias :q="exit"

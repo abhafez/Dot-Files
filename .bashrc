@@ -10,3 +10,4 @@ PS1='[\u@\h \W]\$ '
 set -o vi
 
 source ~/.aliasrc
+. "$HOME/.cargo/env"
