@@ -1,27 +1,63 @@
+##################################################################
+#  ____   ___  _____ ___
+# |  _ \ / _ \|  ___|_ _|
+#   |_) | | | | |_   | |
+# |  _ <| |_| |  _|  | |
+# |_| \_\\___/|_|   |___|
+
 super + alt + r
   rofi -modi emoji -show emoji -emoji-format
 
 super + r
   rofi -show drun
 
-super + shift + a
+##################################################################
+#             __ _
+#  ___  ___  / _| |___      ____ _ _ __ ___
+# / __|/ _ \| |_| __\ \ /\ / / _` | '__/ _ \
+# \__ \ (_) |  _| |_ \ V  V / (_| | | |  __/
+# |___/\___/|_|  \__| \_/\_/ \__,_|_|  \___|
+
+super + shift + r
   arandr
 
 super + shift+ p
   pavucontrol
 
-ctrl + alt + shift + q
-  bash ~/.screenlayout/monitor.sh
+super + shift + f
+  firefox; xdotool key super+1
 
-ctrl + alt + shift + s
+##############################################################
+#  __  __  ___  _   _ ___ _____ ___  ____
+# |  \/  |/ _ \| \ | |_ _|_   _/ _ \|  _ \
+# | |\/| | | | |  \| || |  | || | | | |_) |
+# | |  | | |_| | |\  || |  | || |_| |  _ <
+# |_|  |_|\___/|_| \_|___| |_| \___/|_| \_\
+
+# benq monitor
+super + ctrl + f1
+  bash ~/.screenlayout/monitor.sh
+  
+# benq second mode
+super + ctrl + F9
+  bash ~/.screenlayout/monitor_dp.sh
+
+# laptop
+super + ctrl + F2
   bash ~/.screenlayout/laptop.sh
 
-super + shift + f
-  vivaldi; xdotool key super+1
+# laptop + benq
+super + ctrl + F3
+  bash ~/.screenlayout/dual.sh
 
-super + shift + a
-  arandr
+# banq + laptop
+super + ctrl + F4
+  bash ~/.screenlayout/dual2.sh
 
+##################################################################
+#  ____  _   _ ____  _     ___ ____  _____
+#  VOLUME 
+# 
 XF86AudioRaiseVolume
   bash ~/.config/sxhkd/scripts/RaiseVolume.sh
 
@@ -38,22 +74,49 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     light -U 5
 
-# Take a screenshot
-super + F8
-    flameshot full
+# ##################################################################
+# ____  ____  ___ _   _ _____   ____   ____ ____  _____ _____ _   _
+#|  _ \|  _ \|_ _| \ | |_   _| / ___| / ___|  _ \| ____| ____| \ | |
+#| |_) | |_) || ||  \| | | |   \___ \| |   | |_) |  _| |  _| |  \| |
+#|  __/|  _ < | || |\  | | |    ___) | |___|  _ <| |___| |___| |\  |
+#|_|   |_| \_\___|_| \_| |_|   |____/ \____|_| \_\_____|_____|_| \_|
+## Take a screenshot
+super + bracketright
+    flameshot full -p ~/Pictures/screenshot
 
-super + s
-    flameshot gui
+Print
+    flameshot gui -p ~/Pictures/screenshot
 
-super + F12
-  bash ~/.kb.sh
+super + semicolon
+  bash ~/scripts/kb.sh
 
 super + shift + n
   thunar ~
 
+# ##################################################################
+# ____  _   _ ____  _     ___ ____  _____
+# APPS
+
+super + shift + f
+  firefox; xdotool key super+2
 
 super + shift + s
   slack; xdotool key super+9
 
+# ##################################################################
+# ____  _   _ ____  _     ___ ____  _____
+# SYSTEM
 super + shift + l
   slock
+
+super + shift + BackSpace
+  doas shutdown -h now
+
+alt + shift + f4
+  bash  ~/.config/sxhkd/scripts/useMonitorSound.sh
+
+alt shift + f3
+  bash ~/.config/sxhkd/scripts/useLaptopSound.sh
+
+supper + esc
+  bash ~/scripts/shortcuts.sh
