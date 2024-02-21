@@ -20,8 +20,7 @@ static const int showbar = 1;                    /* 0 means no bar */
 static const int topbar = 1;
 static const int showsystray = 1;
 /* 0 means no systray */ /* 0 means bottom bar */
-static const char *fonts[] = {"SF Mono:size=14",
-                              "Noto Color Emoji:size=14",
+static const char *fonts[] = {"SF Mono:size=14", "Noto Color Emoji:size=14",
                               "CoconNextArabic-Light:size=14"};
 static const char dmenufont[] = "SF Mono:size=14";
 static const char col1[] = "#ffffff";
@@ -85,8 +84,8 @@ static Sp scratchpads[] = {
 };
 
 /* tagging */
-static const char *tags[] = {"",  "󰯊", "󰅨", "󰜬",    "",
-                             "󰌶", "󰮤", "󱍑", "󰒱"};
+static const char *tags[] = {"", "",  "",  "", "",
+                             "ﯙ",   "󰮤", "󱍑", "󰒱"};
 // "\uf19d",
 
 static const Rule rules[] = {
