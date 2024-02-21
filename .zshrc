@@ -65,14 +65,20 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    # tools
     asdf
     git
+    docker
     git-commit
     tmux
-    # node
+    # NODEJS
     yarn
     npm
+    # Elixir 
+    mix
+    # Ruby
+    ruby
+    rails
+
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -103,7 +109,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(oh-my-posh init zsh --config ~/.catppuccin.omp.json)"
+# eval "$(oh-my-posh init zsh --config ~/.catppuccin.omp.json)"
+# eval "$(oh-my-posh init zsh --config ~/.themes/tokyonight.omp.json)"
 # eval "$(oh-my-posh init zsh --config ~/.shell.omp.json)"
 
 if [ ! -S ~/.ssh/ssh_auth_sock ]; then
@@ -112,12 +119,6 @@ if [ ! -S ~/.ssh/ssh_auth_sock ]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l > /dev/null || ssh-add
-
-if [ -n "$DESKTOP_SESSION" ];then
-    for env_var in $(gnome-keyring-daemon --start); do
-        export env_var
-    done
-fi
 
 # bindkey -s ^f "bash tmux-session\n"
 # bindkey -s ^b "bash tmux-sessions.sh\n"
@@ -158,4 +159,35 @@ bindkey '^X^E' edit-command-line
 
 [[ ! $DISPLAY && $(tty) = "/dev/tty1"  ]] && startx
 
-xdg-mime default your-file-manager.desktop inode/directory
+xdg-mime default thunar.desktop inode/directory
+source "$HOME/.cargo/env"
+
+source "$HOME/.zsh/spaceship/spaceship.zsh"
+
+
+bindkey '^w' autosuggest-execute
+bindkey '^e' autosuggest-accept
+bindkey '^u' autosuggest-toggle
+bindkey '^L' vi-forward-word
+bindkey '^k' up-line-or-search
+bindkey '^j' down-line-or-search
+
+eval "$(starship init zsh)"
+
+
+function ranger {
+	local IFS=$'\t\n'
+	local tempfile="$(mktemp -t tmp.XXXXXX)"
+	local ranger_cmd=(
+		command
+		ranger
+		--cmd="map Q chain shell echo %d > "$tempfile"; quitall"
+	)
+
+	${ranger_cmd[@]} "$@"
+	if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]]; then
+		cd -- "$(cat "$tempfile")" || return
+	fi
+	command rm -f -- "$tempfile" 2>/dev/null
+}
+
