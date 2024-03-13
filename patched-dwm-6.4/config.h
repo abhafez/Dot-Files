@@ -20,8 +20,8 @@ static const int showbar = 1;                    /* 0 means no bar */
 static const int topbar = 1;
 static const int showsystray = 1;
 /* 0 means no systray */ /* 0 means bottom bar */
-static const char *fonts[] = {"SF Mono:size=14", "Noto Color Emoji:size=14",
-                              "CoconNextArabic-Light:size=14"};
+static const char *fonts[] = {"SF Mono:size=13", "Noto Color Emoji:size=13",
+                              "CoconNextArabic-Light:size=13"};
 static const char dmenufont[] = "SF Mono:size=14";
 static const char col1[] = "#ffffff";
 static const char col2[] = "#ffffff";
@@ -41,6 +41,7 @@ static const char col_red[] = "#F28FAD";
 static const char col_orange[] = "#F8BD96";
 static const char col_yellow[] = "#FAE3B0";
 static const char col_teal[] = "#94E2D5";
+static const char col_sapphire[] = "#89B4FA";
 static const char col_blu[] = "#008080";
 static const char col_borderbar[] = "#1E1D2D"; // inner border
 
@@ -64,7 +65,7 @@ static const char *colors[][3] = {
     [SchemeCol4] = {col4, col_gray1, col_gray2},
     [SchemeCol5] = {col5, col_gray1, col_gray2},
     [SchemeCol6] = {col6, col_gray1, col_gray2},
-    [SchemeSel] = {col_teal, col_black, col_teal},
+    [SchemeSel] = {col_sapphire, col_black, col_sapphire},
 };
 
 typedef struct {

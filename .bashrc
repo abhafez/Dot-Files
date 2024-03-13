@@ -6,8 +6,4 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-
-set -o vi
-
-source ~/.aliasrc
-. "$HOME/.cargo/env"
+source "$HOME/.cargo/env"
