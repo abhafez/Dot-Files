@@ -8,6 +8,7 @@ alias r="doas xbps-remove -R"
 #############
 # shortcuts
 #############
+alias code="/usr/share/code/bin/code"
 alias vim="nvim"
 alias cl="clear"
 alias t="tmux"
@@ -17,12 +18,11 @@ alias lsa='lsd -la'
 alias ks='lsd'
 alias cat='bat --theme="Catppuccin-mocha"'
 alias lg='lazygit'
-alias code='code --enable-proposed-api GitHub.vscode-pull-request-github'
 #############
 # quick change
 #############
 alias sxkb='cd ~/.config/sxhkd/; nvim .;'
-alias vimrc="cd ~/.config/nvim; vim ."
+alias vimrc="cd ~/.config/nvim; nvim ."
 alias zshrc='vim ~/.zshrc'
 #############
 #### exit
@@ -69,4 +69,5 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+
 
